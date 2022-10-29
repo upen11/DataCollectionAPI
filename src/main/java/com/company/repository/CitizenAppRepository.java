@@ -1,11 +1,13 @@
 package com.company.repository;
 
+import java.io.Serializable;
+
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import com.company.entity.DCEntity;
+import com.company.entity.CitizenAppEntity;
 
 @Repository
-public interface DCEntityRepo extends JpaRepository<DCEntity, Integer> {
+public interface CitizenAppRepository extends JpaRepository<CitizenAppEntity, Serializable>{
 
 }
